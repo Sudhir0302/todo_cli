@@ -5,13 +5,14 @@ import (
 	"fmt"
 	"log"
 
-	_ "github.com/mattn/go-sqlite3"
+	_ "modernc.org/sqlite"
 )
 
 var DB *sql.DB
 
-func init() {
-	DB, err := sql.Open("sqlite3", "./todo.db")
+func Conn() {
+	var err error
+	DB, err = sql.Open("sqlite", "./todo.db")
 	if err != nil {
 		log.Fatal(err)
 	}
