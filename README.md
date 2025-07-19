@@ -101,5 +101,3 @@ Todo's:
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-This should give a clear overview of the application, installation steps, and usage instructions for anyone looking to try out the project.

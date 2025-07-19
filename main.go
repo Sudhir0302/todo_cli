@@ -36,6 +36,10 @@ func main() {
 			fmt.Print("Enter a task to add: ")
 			task, _ := reader.ReadString('\n')
 			task = strings.TrimSpace(task)
+			if task == "" {
+				fmt.Println("!!empty task!!")
+				continue
+			}
 			// fmt.Println(task)
 			res := todoHand.Add(task)
 			fmt.Println(res)
@@ -43,6 +47,10 @@ func main() {
 			fmt.Print("Enter a task to update: ")
 			task, _ := reader.ReadString('\n')
 			task = strings.TrimSpace(task)
+			if task == "" {
+				fmt.Println("!!empty task!!")
+				continue
+			}
 			// fmt.Println(task)
 			res := todoHand.Update(task)
 			fmt.Println(res)
@@ -51,6 +59,10 @@ func main() {
 			fmt.Print("Enter a task to delete: ")
 			task, _ := reader.ReadString('\n')
 			task = strings.TrimSpace(task)
+			if task == "" {
+				fmt.Println("!!empty task!!")
+				continue
+			}
 			// fmt.Println(task)
 			res := todoHand.Delete(task)
 			fmt.Println(res)

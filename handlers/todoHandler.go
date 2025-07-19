@@ -55,21 +55,30 @@ func (todo *TodoHandler) Add(task string) string {
 
 func (todo *TodoHandler) Update(task string) string {
 	stmt, _ := todo.DB.Prepare("UPDATE todo SET status=true WHERE task=?")
-	_, err := stmt.Exec(task)
+	res, err := stmt.Exec(task)
 
 	if err != nil {
 		// log.Println("failed")
 		return "failed"
+	}
+
+	c, _ := res.RowsAffected()
+	if c == 0 {
+		return "invalid task"
 	}
 	return "success"
 }
 
 func (todo *TodoHandler) Delete(task string) string {
 	stmt, _ := todo.DB.Prepare("DELETE FROM todo WHERE task=?")
-	_, err := stmt.Exec(task)
-
+	res, err := stmt.Exec(task)
 	if err != nil {
 		return "failed"
+	}
+
+	c, _ := res.RowsAffected()
+	if c == 0 {
+		return "invalid task"
 	}
 
 	return "success"
