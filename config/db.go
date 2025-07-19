@@ -12,7 +12,7 @@ var DB *sql.DB
 
 func Conn() {
 	var err error
-	DB, err = sql.Open("sqlite", "./todo.db")
+	DB, err = sql.Open("sqlite", "./todo_cli.db")
 	if err != nil {
 		log.Fatal(err)
 	}

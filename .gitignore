@@ -1,0 +1,29 @@
+# Ignore the SQLite database file
+todo_cli.db
+
+# Go binary
+/bin/
+/build/
+
+# Go's default binary output (can be changed via `go build -o <name>`)
+*.exe
+*.test
+
+# IDE/editor specific files
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependency directories
+/vendor/
+
+# Ignore any local environment files
+.env
+
+# Log files
+*.log
+
+# OS specific files
+.DS_Store
+Thumbs.db
