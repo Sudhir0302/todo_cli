@@ -1,7 +1,3 @@
-Here’s a simple README based on the code you've provided:
-
----
-
 # Go Todo CLI
 
 A command-line to-do application built with **Go** and **SQLite** for managing tasks. This application allows you to add, update, delete, and view tasks directly from the terminal. It uses an SQLite database to store the tasks persistently.
