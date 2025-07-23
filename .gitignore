@@ -8,7 +8,7 @@ todo_cli.db
 # Go's default binary output (can be changed via `go build -o <name>`)
 *.exe
 *.test
-
+todo-cli-arm64
 # IDE/editor specific files
 .vscode/
 .idea/

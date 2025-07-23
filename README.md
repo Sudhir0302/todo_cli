@@ -96,6 +96,10 @@ Todo's:
 5. Push to the branch (`git push origin feature-name`).
 6. Open a Pull Request.
 
+## Go Reference
+
+[![Go Reference](https://pkg.go.dev/badge/github.com/Sudhir0302/todo_cli.svg)](https://pkg.go.dev/github.com/Sudhir0302/todo_cli)
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
